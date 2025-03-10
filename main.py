@@ -1,6 +1,6 @@
 import argparse
-from gauss_seidel.read_equation import *
-from gauss_seidel.gauss_seidel_algorithm import *
+from read_equation import *
+from gauss_seidel_algorithm import *
 
 if __name__ == '__main__':
     # Initialize argparse

@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e  # Exit immediately if any command fails
+
+echo "Running tests before commit..."
+
+# Define the test directory
+TEST_DIR="gauss_seidel/tests"
+
+# Run tests using pytest
+if pytest "$TEST_DIR"; then
+    echo "All tests passed! Proceeding with commit."
+else
+    echo "Tests failed! Fix the issues before committing."
+    exit 1
+fi
+
+exit 0
